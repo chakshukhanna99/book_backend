@@ -1,0 +1,26 @@
+# Node.js
+#####################
+
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules/
+
+# Build directories
+dist/
+
+# Environment variables
+.env
+
+# IDE files
+*.sublime-workspace
+*.vscode
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# npm debug logs
+npm-debug.log*
