@@ -1,15 +1,17 @@
 import app from "./src/app";
-import {config} from "./src/config/config"
+import { config } from "./src/config/config";
+import connectDB from "./src/config/db";
+const mongoose = require('mongoose');
 
-const startServer =  () => {
-    // Connect database
-  
-    const port = config.port || 3000;
-  
-    app.listen(port, () => {
-      console.log(`Listening on port: ${port}`);
-    });
-  };
-  
+const startServer = async () => {
+  // Connect database
+  await connectDB();
 
-  startServer();
+  const port = config.port || 3000;
+
+  app.listen(port, () => {
+    console.log(`Listening on port: ${port}`);
+  });
+};
+
+startServer();
