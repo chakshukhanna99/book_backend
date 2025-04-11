@@ -1,16 +1,14 @@
 {
-  "name": "elib",
+  "name": "chakshu-khanna",
   "version": "1.0.0",
-  "description": "This is a ebook api project",
-  "main": "index.js",
+  "description": "This is an ebook API project",
+  "main": "dist/server.js",
   "scripts": {
-    "dev": "nodemon server.ts"
+    "dev": "nodemon server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
-  "keywords": [
-    "rest",
-    "api",
-    "express"
-  ],
+  "keywords": ["rest", "api", "express"],
   "author": "",
   "license": "ISC",
   "devDependencies": {
