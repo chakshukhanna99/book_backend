@@ -1,15 +1,21 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "outDir": "./dist",
-    "rootDir": "./",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "typeRoots": ["./node_modules/@types"]
+    "target": "ES2020", // Modern JS target
+    "module": "CommonJS", // CommonJS for Node.js
+    "rootDir": ".", // Root source folder
+    "outDir": "dist", // Output folder for compiled JS
+    "esModuleInterop": true, // Enables compatibility with CommonJS modules
+    "forceConsistentCasingInFileNames": true, // Ensures case-sensitive paths
+    "strict": true, // Enables all strict type-checking
+    "skipLibCheck": true, // Skips type checking of declaration files
+    "resolveJsonModule": true, // Allows importing JSON files
+    "moduleResolution": "node", // Node module resolution
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "isolatedModules": true, // Ensures each file can be transpiled independently
+    "noEmit": false, // Emit output when compiling
+    "noFallthroughCasesInSwitch": true, // Helpful to catch bugs in switch-case
+    "types": ["node"]
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src", "server.ts"], // Only compile files in src/
+  "exclude": ["node_modules", "dist"] // Don't compile these folders
 }
