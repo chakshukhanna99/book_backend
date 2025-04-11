@@ -14,7 +14,12 @@
     "isolatedModules": true, // Ensures each file can be transpiled independently
     "noEmit": false, // Emit output when compiling
     "noFallthroughCasesInSwitch": true, // Helpful to catch bugs in switch-case
-    "types": ["node"]
+    "types": ["node"],
+    "typeRoots": [
+      "./node_modules/@types",
+      "../node_modules/@types",
+      "../../node_modules/@types"
+    ]
   },
   "include": ["src", "server.ts"], // Only compile files in src/
   "exclude": ["node_modules", "dist"] // Don't compile these folders
