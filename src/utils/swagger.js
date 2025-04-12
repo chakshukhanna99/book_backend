@@ -17,9 +17,7 @@ const options = {
     },
     servers: [
       {
-        url:
-          process.env.SWAGGER_BASE_URL ||
-          "https://bookbackend-production-b990.up.railway.app", // 👈 Your backend base URL
+        url: "https://bookbackend-production-b990.up.railway.app", // 👈 Your backend base URL
         description: "Production server",
       },
     ],
