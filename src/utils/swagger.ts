@@ -11,8 +11,8 @@ const options = {
     },
     servers: [
       {
-        url: "http://localhost:5513", // 👈 Your backend base URL
-        description: "Local development server",
+        url: "https://bookbackend-production-b990.up.railway.app", // 👈 Your backend base URL
+        description: "Production server",
       },
     ],
     components: {
