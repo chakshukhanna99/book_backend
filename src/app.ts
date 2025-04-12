@@ -14,7 +14,7 @@ app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 app.get("/", (req, res, next) => {
-  res.json({ message: "Welcome to chakshu khanna's api's" });
+  res.json({ message: "Welcome to chakshu khanna's api's " });
 });
 app.use("/api/users", userRouter);
 app.use("/api/books", bookRouter);
