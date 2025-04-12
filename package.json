@@ -6,7 +6,7 @@
   "scripts": {
     "preinstall": "npm install --save-dev @types/node",
     "dev": "nodemon server.ts",
-    "build": "tsc && echo '✅ Build succeeded!",
+    "build": "tsc",
     "start": "node dist/server.js"
   },
   "keywords": [],
