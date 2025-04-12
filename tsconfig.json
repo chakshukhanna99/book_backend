@@ -16,6 +16,6 @@
     "noFallthroughCasesInSwitch": true, // Helpful to catch bugs in switch-case
     "types": ["node"]
   },
-  "include": ["src", "server.ts"], // Only compile files in src/
+  "include": ["src", "server.ts", "src/types-fix.ts"], // Only compile files in src/
   "exclude": ["node_modules", "dist"] // Don't compile these folders
 }
