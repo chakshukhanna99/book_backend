@@ -2,9 +2,8 @@
   "name": "chakshu-khanna",
   "version": "1.0.0",
   "description": "This is an ebook API project",
-  "main": "dist/server.js",
+  "main": "./dist/server.js",
   "scripts": {
-    "preinstall": "npm install --save-dev @types/node",
     "dev": "nodemon server.ts",
     "build": "tsc",
     "start": "node dist/server.js"
