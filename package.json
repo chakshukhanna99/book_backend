@@ -4,8 +4,9 @@
   "description": "This is an ebook API project",
   "main": "dist/server.js",
   "scripts": {
+    "preinstall": "npm install --save-dev @types/node",
     "dev": "nodemon server.ts",
-    "build": "npm list @types/node && tsc",
+    "build": "tsc && echo '✅ Build succeeded!",
     "start": "node dist/server.js"
   },
   "keywords": [],
